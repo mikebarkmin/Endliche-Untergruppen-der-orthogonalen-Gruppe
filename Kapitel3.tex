@@ -1,0 +1,58 @@
+\section{Orthogonale Transformationen im dreidimensionalen Raum}
+\begin{theorem}
+ Angenommen $T$ ist eine Drehung in $\OR{3}$, dann ist $T$ eine Drehung um eine fixierte Achse, sodass $T$ einen Eigenvektor $x$ zum Eigenwert $1$ besitzt und die Einschränkung von $T$ auf die Ebene $\mathcal{P}=x^{\perp}$ eine Drehung im zweidimensionalen Raum ist.
+\end{theorem}
+\begin{proof}
+ Angenommen $T$ ist eine Drehung in $\OR(3)$ und $\lambda_1,\lambda_2,\lambda_3$ sind Eigenwerte von $T$. Sei $\lambda_1 \in \mathbb{R}$, dann können $\lambda_2$ und $\lambda_3$ nur folgende Werte annehmen, da $det(T)=\lambda_1\lambda_2\lambda_3=1$.
+ \begin{align}
+  \lambda_1=1, \lambda_2=\lambda_3=\pm1 \\
+  \lambda_1=1, \lambda_2=\overline{\lambda_3}\notin \mathbb{R}
+ \end{align}
+Für uns ist aber nur der Eigenwert $1$ interessant, dieser ist aber in beiden Fällen vorhanden.
+
+Wir wählen einen Eigenvektor $x$ zum Eigenwert $1$ und bemerken, dass $x=T^{-1}Tx=T^{-1}x$ gilt. Deshalb gilt auch $0=(x^{\perp},x)=(x^{\perp},T^{-1}x)=(Tx^{\perp},x)$ und $\mathcal{P}=x^{\perp}$ ist invariant unter $T$. Betrachten wir nun die Determinate der Einschränkung $T|\mathcal{P}$, dann gilt $det(T|\mathcal{P})=1$. Demnach ist $T|\mathcal{P}$ eine Drehung der Ebene $\mathcal{P}$
+\end{proof}
+\begin{bem}
+ Wenn $S$ eine Spiegelung an der Ebene $\mathcal{P}$ in $\OR(3)$ ist, dann gilt $Sx=x \ \forall x \in \mathcal{P}$ und $Sy=-y \ \forall y \in \mathcal{P}^{\perp}$. Wir können nun einen Einheitsvektor $r \in \mathcal{P}^{\perp}$ so wählen, dass $Sx=x-2(x,r)r \ \forall x\in \mathbb{R}^3$ gilt. Wenn wir nun eine Basis $\{r,x_2,x_3\}$ von $\mathcal{P}$ wählen, sodass die Transformationsmatirx unter dieser Basis von $S$ durch 
+ \begin{center}
+  $A= \begin{pmatrix}
+        -1 && 0 && 0 \\
+        0 && 1 && 0 \\
+        0 && 0 && 1 
+       \end{pmatrix}$
+ \end{center}
+repräsentiert wird. Es gilt außerdem $S^2 = E_3$.
+\end{bem}
+\begin{theorem}
+ Sei $T\in\OR{3}$ mit $det T = -1$. Dann ist $T$ eine Drehspiegelung mit Spiegelebene $\mathcal{P}$ und Drehachse $\mathcal{P}^{\perp}$.
+\end{theorem}
+\begin{proof}
+ Angenommen $T$ ist eine Spiegelung in $\OR(3)$ und $\lambda_1,\lambda_2,\lambda_3$ sind Eigenwerte von $T$. Sei $\lambda_1 \in \mathbb{R}$, dann können $\lambda_2$ und $\lambda_3$ nur folgende Werte annehmen, da $det(T)=\lambda_1\lambda_2\lambda_3=-1$.
+ \setcounter{equation}{0}
+ \begin{align}
+  \lambda_1=-1, \lambda_2=\lambda_3=\pm1 \\
+  \lambda_1=-1, \lambda_2=\overline{\lambda_3}\notin \mathbb{R}
+ \end{align}
+ Wir wählen einen Eigenvektor $x$ zum Eigenwert $-1$ und wählen $\mathcal{P}=x^{\perp}$. Betrachten wir nur die Determinate der Einschränkung $T|\mathcal{P}$, also $det(T|\mathcal{P})=\lambda_2\lambda_3=1$, dann lässt sich erkennen, dass $T|\mathcal{P}$ eine Drehung der Ebene $\mathcal{P}$ sein muss. Wir wählen nun eine Basis $\{x_1,x_2\}$ von $\mathcal{P}$, sodass die Transformationsmatirx von $T$ unter der Basis $\{x_1,x_2,x_3\}$ durch \begin{align*}
+  A&=
+\begin{pmatrix}
+        -1 && 0 && 0 \\
+        0 && \cos(\theta) && -\sin(\theta) \\
+        0 && \sin(\theta) && \cos(\theta)
+       \end{pmatrix} \\ &=
+       \begin{pmatrix}
+        1 && 0 && 0 \\
+        0 && \cos(\theta) && -\sin(\theta) \\
+        0 && \sin(\theta) && \cos(\theta)
+       \end{pmatrix} 
+       \begin{pmatrix}
+        -1 && 0 && 0 \\
+        0 && 1 && 0 \\
+        0 && 0 && 1
+       \end{pmatrix}
+ \end{align*}
+repräsentiert wird.
+\end{proof}
+
+
+

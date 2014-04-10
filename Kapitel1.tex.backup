@@ -1,0 +1,27 @@
+\section{Orthogonale Transformationen im zweidimensionalen Raum}
+\begin{bem}
+ Sei $T \in \mathcal{O}(\mathbb{R}^2)$, dann ist $T$ eindeutig über die Basisvektoren $e_1=(1,0)$ und $e_2=(0,1)$ definiert. Da $T \in \mathcal{O}(\mathbb{R}^2)$ und somit längen- und orthogonalitätserhalten ist, existiert ein eindeutiges $\theta \in [0,2 \pi)$, sodass $Te_1=(\cos(\theta),\sin(\theta))$ und $Te_2=\pm(-\sin(\theta),\cos(\theta))$.
+ 
+ Wenn $Te_2=(-\sin(\theta),\cos(\theta))$, dann wird $T$ durch die Matrix 
+ \begin{center}
+  $A = \begin{pmatrix}
+        \cos(\theta) && -\sin(\theta) \\
+        \sin(\theta) && \cos(\theta)
+       \end{pmatrix}$
+
+ \end{center}
+repräsentiert und $T$ ist eine Drehung um den Ursprung mit dem Winkel $\theta$. Außerdem gilt $det T = det A = \cos^2(\theta) + \sin^2(\theta) = 1$
+
+Wenn $Te_2=(\sin(\theta),-\cos(\theta))$, dann wird $T$ durch die Matrix 
+ \begin{center}
+  $A = \begin{pmatrix}
+        \cos(\theta) && \sin(\theta) \\
+        \sin(\theta) && -\cos(\theta)
+       \end{pmatrix}$
+
+ \end{center}
+repräsentiert und $T$ ist eine Spiegelung mit \ Eigenvektor $x=(\cos(\theta/2),\sin(\theta/2))$ zum Eigenwert $1$. Außerdem gilt $det T = det A = -1$. 
+\end{bem}
+\begin{theorem}
+ Jede orthogonale Transformation im zweidimensionalen Raum ist entweder eine Spiegelung oder eine Drehung.
+\end{theorem}
