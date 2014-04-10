@@ -1,1 +1,17 @@
 \section{Endliche Gruppen im dreidimensionalen Raum} 
+Nachdem wir die endlichen Drehgruppen im dreidimensionalen Raum klassifiziert haben, möchten wir nun die endlichen Gruppen klassifizieren. Wir schauen uns zunächst die Gruppe $\mathcal{W}^*$ an. Diese soll alle orthogonalen Abbildungen umfassen, welche den Würfel wieder auf sich selber abbilden. Natürlich ist leicht zu sehen, dass $\mathcal{W}$ kleiner ist als $\mathcal{W}^*$. Aber wir können bemerken, dass für $T \in \mathcal{W}^*\backslash\mathcal{W}$ \ $-T = -1 \cdot T \in \mathcal{W}$ gilt. Daher gilt $\mathcal{W}^*=\mathcal{W}\cup(-1)\mathcal{W}$ und wir können ohne Berücksichtigung der Dimension folgendes Lemma aufstellen.
+\begin{lemma}
+ Wenn $\mathcal{G}\leq\mathcal{O}(V)$ und $\mathcal{H}$ eine Untergruppe aus Drehungen von $\mathcal{G}$ ist, dann gilt entweder $\mathcal{H}=\mathcal{G}$ oder $[\mathcal{G}:\mathcal{H}]=2$. Insbesonder ist $\mathcal{H}$ eine Untergruppe von $\mathcal{G}$ 
+\end{lemma}
+\begin{proof}
+ Angenommen $T\in\mathcal{G}\backslash\mathcal{H}$, dann können wir ein beliebiges $S\in\mathcal{G}\backslash\mathcal{H}$ finden, sodass $\det(T^{-1}S)=(-1)^2=1$ und $T^{-1}S\in\mathcal{H}$ gilt. Folglich ist dann $\mathcal{G}=\mathcal{H}\cup T \mathcal{H}$ und $[\mathcal{G}:\mathcal{H}]=2$
+\end{proof}
+\begin{theorem}
+ Sei $\mathcal{G}\leq\OR{3}$, dann ist $\mathcal{G}$ isomorph zu einer der folgenden Klassen:
+ \begin{itemize}
+  \item $\mathcal{C}^n_3,n\geq1;\mathcal{H}^n_3,n\geq2;\mathcal{T};\mathcal{W};\mathcal{I}$
+  \item $(\mathcal{C}^n_3)^*,n\geq1;(\mathcal{H}^n_3)^*,n\geq 2;\mathcal{T}^*;\mathcal{W}^*;\mathcal{I}^*$
+  \item $\mathcal{C}^2n_3]\mathcal{C}^n_3,n\geq1;\mathcal{H}^n_3]\mathcal{C}^n_3,n\geq 2;\mathcal{H}^2n_3,n]\mathcal{H}^n_3,\geq2;\mathcal{W}]\mathcal{T}$
+\end{itemize}
+Hinweis: $\mathcal{R}^*:=\mathcal{R}\cup -\mathcal{R}$ und $\mathcal{R}]\mathcal{P}:=\mathcal{P}\cup \{-U|U\in \mathcal{R} \backslash \mathcal{P} \}$
+\end{theorem}

@@ -1,17 +1,16 @@
-\documentclass[a4paper,12pt]{amsart}
+\documentclass[a4paper,12pt]{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
-\usepackage{amsmath}
+\usepackage{amsmath,amssymb,amsthm}
 \usepackage{graphicx}
+\usepackage[onehalfspacing]{setspace}
 \newtheorem{defi}{Definition}
 \newtheorem{theorem}{Satz}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{bem}[theorem]{Bemerkung}
 
-
 \newcommand{\OR}[1]{{\mathcal{O}(\mathbb{R}^#1)}}
 \begin{document}
-
 \input{./Titelseite.tex}
 \newpage
 \setcounter{tocdepth}{2}
