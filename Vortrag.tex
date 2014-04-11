@@ -4,16 +4,24 @@
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{graphicx}
 \usepackage[onehalfspacing]{setspace}
-\newtheorem{defi}{Definition}
+\usepackage[colorlinks,
+pdfpagelabels,
+pdfstartview = FitH,
+bookmarksopen = true,
+bookmarksnumbered = true,
+linkcolor = black,
+plainpages = false,
+hypertexnames = false,
+citecolor = black] {hyperref}
 \newtheorem{theorem}{Satz}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{bem}[theorem]{Bemerkung}
-
+\newtheorem{defi}[theorem]{Definition}
 \newcommand{\OR}[1]{{\mathcal{O}(\mathbb{R}^#1)}}
 \begin{document}
 \input{./Titelseite.tex}
 \newpage
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{1}
 \tableofcontents
 \newpage
 \input{./Kapitel1.tex}
