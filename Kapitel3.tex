@@ -23,8 +23,9 @@ Wir wählen einen Eigenvektor $x$ zum Eigenwert $1$ und bemerken, dass $x=T^{-1}
  \end{center}
 repräsentiert wird. Es gilt außerdem $S^2 = E_3$.
 \end{bem}
+\newpage
 \begin{theorem}
- Sei $T\in\OR{3}$ mit $det T = -1$. Dann ist $T$ eine Drehspiegelung mit Spiegelebene $\mathcal{P}$ und Drehachse $\mathcal{P}^{\perp}$.
+ Sei $T\in\OR{3}$ mit $\det T = -1$. Dann ist $T$ eine Drehspiegelung mit Spiegelebene $\mathcal{P}$ und Drehachse $\mathcal{P}^{\perp}$.
 \end{theorem}
 \begin{proof}
  Angenommen $T$ ist eine Spiegelung in $\OR(3)$ und $\lambda_1,\lambda_2,\lambda_3$ sind Eigenwerte von $T$. Sei $\lambda_1 \in \mathbb{R}$, dann können $\lambda_2$ und $\lambda_3$ nur folgende Werte annehmen, da $\det(T)=\lambda_1\lambda_2\lambda_3=-1$.
@@ -33,7 +34,7 @@ repräsentiert wird. Es gilt außerdem $S^2 = E_3$.
   \lambda_1=-1, \lambda_2=\lambda_3=\pm1 \\
   \lambda_1=-1, \lambda_2=\overline{\lambda_3}\notin \mathbb{R}
  \end{align}
- Wir wählen einen Eigenvektor $x$ zum Eigenwert $-1$ und wählen $\mathcal{P}=x^{\perp}$. Betrachten wir nur die Determinate der Einschränkung $T|\mathcal{P}$, also $det(T|\mathcal{P})=\lambda_2\lambda_3=1$, dann lässt sich erkennen, dass $T|\mathcal{P}$ eine Drehung der Ebene $\mathcal{P}$ sein muss. Wir wählen nun eine Basis $\{x_1,x_2\}$ von $\mathcal{P}$, sodass die Transformationsmatirx von $T$ unter der Basis $\{x_1,x_2,x_3\}$ durch \begin{align*}
+ Wir wählen einen Eigenvektor $x$ zum Eigenwert $-1$ und wählen $\mathcal{P}=x^{\perp}$. Betrachten wir nur die Determinate der Einschränkung $T|\mathcal{P}$, also $\det(T|\mathcal{P})=\lambda_2\lambda_3=1$, dann lässt sich erkennen, dass $T|\mathcal{P}$ eine Drehung der Ebene $\mathcal{P}$ sein muss. Wir wählen nun eine Basis $\{x_1,x_2\}$ von $\mathcal{P}$, sodass die Transformationsmatirx von $T$ unter der Basis $\{x_1,x_2,x_3\}$ durch \begin{align*}
   A&=
 \begin{pmatrix}
         -1 && 0 && 0 \\
