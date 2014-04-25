@@ -1,0 +1,44 @@
+\section{Endliche Drehgruppen im dreidimensionalen Raum}
+\begin{bem}
+ Sei $W$ ein Untervektorraum mit $\dim W = 2$ im Vektorraum V mit $\dim V = 3$. Wenn $R$ eine Drehung in $\mathcal{O}(W)$ ist, dann kann $R$ zu einer Drehung in $\mathcal{O}(V)$ erweitert werden. Dazu wählen wir eine Basis $\{x_1,x_2,x_3\}$ von $V$ mit $x_1 \in W^{\perp}$ und $x_2,x_3 \in W$, sodass die Matrix $R$ durch \begin{center}
+                                                                                                                                                                                                                                                                                                                                 $A=\begin{pmatrix}                                                                                                                                                                                                                                                                                                                                     
+   1 && 0 && 0 \\
+   0 && \cos(\theta) && -\sin(\theta) \\
+   0 && \sin(\theta) && \cos(\theta)
+   \end{pmatrix}
+$                                                                                                                                                                                                                                                                                                                         \end{center}
+repräsentiert wird.
+\end{bem}
+\begin{bem}
+ Wenn wir jede Transformation $T$ aus einer Diederuntergruppe $\mathcal{H}^n_2$ zu einer Drehung in $\mathcal{O}(V)$ erweitern, dann erhalten wir eine Menge von Drehungen die eine Untergruppe von $\mathcal{O}(V)$ bildet und diese Untergruppe ist isomorph zu $\mathcal{H}^n_2$. Wir bezeichnen sie als Diedergruppe $\mathcal{H}^n_3$.
+\end{bem}
+\begin{bem}Aus den Modellen der platonische Körper können wir uns ihre Drehgruppen überlegen. Im nächsten Abschnitt nehmen wir an, dass die Schwerpunkte der Körper im Ursprung vom $\mathbb{R}^3$ liegen. \\
+$|\mathcal{T}|=4 \cdot 2 + 3 \cdot 1 +1 = 12$ (Tetraeder)\\
+$|\mathcal{W}|=6 \cdot 1 + 4 \cdot 2 + 3 \cdot 3 +1 = 24$ (Hexaeder / Oktaeder)\\
+$|\mathcal{I}|=15 \cdot 1 + 10 \cdot 2 + 6 \cdot 4 +1 = 60$ (Dodekaeder / Ikosaeder)
+\end{bem}
+\begin{defi}
+ Sei $E_3 \neq T \in \OR{3}$ eine Drehung, dann hat $T$ genau zwei Fixpunkte auf der Einheitskugel, nämlich die Schnittpunkte der Einheitskugel mit der Drehachse. Diese Punkte nennen wir die Pole der Drehung.
+\end{defi}
+\begin{bem}
+ Wenn wir uns die Bahnen, die Ordnung der Stabilisatoren und die Anzahl der Pole einer Symmetriegruppe $\mathcal{G}$ mit Polmenge $\mathcal{P}$ anschauen, dann ergeben sich folgende charakteristische Werte.
+ {%
+\begin{center}
+\begin{tabular}{l|cccccc}
+$\mathcal{G}$ & $|\mathcal{G}|$ & $|\mathcal{P}|$ & Anzahl Bahnen & \multicolumn{3}{c}{Ordnung der Stabilisatoren}\\
+\hline
+$\mathcal{C}^n_3$ & $n$ & $2$ & $2$ & \ \ \ \ \ $n$ & \ \ \ \ \ \ $n$ & \\
+$\mathcal{H}^n_3$ & $2n$ & $2n + 2$ & $3$ & \ \ \ \ \ $2$ & \ \ \ \ \ \ $2$ & $n$\\
+$\mathcal{T}$ & $12$ & $14$ & $3$ & \ \ \ \ \ $2$ & \ \ \ \ \ \ $3$ & $3$\\
+$\mathcal{W}$ & $24$ & $26$ & $3$ & \ \ \ \ \  $2$ & \ \ \ \ \ \ $3$ & $4$\\
+$\mathcal{I}$ & $60$ & $62$ & $3$ & \ \ \ \ \ $2$ & \ \ \ \ \ \ $3$ & $5$
+ \end{tabular}
+ \end{center}
+}%
+\end{bem}
+\begin{theorem}
+ Haben $\mathcal{C}^n_3,\mathcal{H}^n_3,\mathcal{T},\mathcal{W}$ und $\mathcal{I}$ die gleichen Eigenschaften wie in Bemerkung 4.5., dann ist $\mathcal{C}^n_3,n\geq1;\mathcal{H}^n_3,n\geq2;\mathcal{T};\mathcal{W};\mathcal{I}$ eine komplette Liste aller endlichen Untergruppen von Drehungen aus $\OR{3}$.
+\end{theorem}
+
+
+

@@ -1,0 +1,18 @@
+\section{Orthogonale Transformationen im dreidimensionalen Raum}
+\begin{theorem}
+ Angenommen $T$ ist eine Drehung in $\OR{3}$, dann ist $T$ eine Drehung um eine fixierte Achse, sodass $T$ einen Eigenvektor $x$ zum Eigenwert $1$ besitzt und die Einschränkung von $T$ auf die Ebene $\mathcal{P}=x^{\perp}$ eine Drehung im zweidimensionalen Raum ist.
+\end{theorem}
+\begin{bem}
+ Wenn $S$ eine Spiegelung an der Ebene $\mathcal{P}$ in $\OR{3}$ ist, dann gilt $Sx=x \ \forall x \in \mathcal{P}$ und $Sy=-y \ \forall y \in \mathcal{P}^{\perp}$. Wir können nun einen Einheitsvektor $r \in \mathcal{P}^{\perp}$ so wählen, dass $Sx=x-2(x,r)r \ \forall x\in \mathbb{R}^3$ gilt. Wir wählen nun eine Basis $\{x_2,x_3\}$ von $\mathcal{P}$, sodass die Transformationsmatrix unter der Basis $\{r,x_2,x_3\}$ von $S$ durch 
+ \begin{center}
+  $A= \begin{pmatrix}
+        -1 && 0 && 0 \\
+        0 && 1 && 0 \\
+        0 && 0 && 1 
+       \end{pmatrix}$
+ \end{center}
+repräsentiert wird. Es gilt außerdem $S^2 = E_3$.
+\end{bem}
+\begin{theorem}
+ Sei $T\in\OR{3}$ mit $\det T = -1$. Dann ist $T$ eine Drehspiegelung mit Spiegelebene $\mathcal{P}$ und Drehachse $\mathcal{P}^{\perp}$.
+\end{theorem}

@@ -1,0 +1,34 @@
+\documentclass[a4paper,12pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage[onehalfspacing]{setspace}
+\usepackage[colorlinks,
+pdfpagelabels,
+pdfstartview = FitH,
+bookmarksopen = true,
+bookmarksnumbered = true,
+linkcolor = black,
+plainpages = false,
+hypertexnames = false,
+citecolor = black] {hyperref}
+\newtheorem{theorem}{Satz}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{bem}[theorem]{Bemerkung}
+\newtheorem{defi}[theorem]{Definition}
+\newcommand{\OR}[1]{{\mathcal{O}(\mathbb{R}^#1)}}
+\begin{document}
+\input{./TitelseiteHandout.tex}
+\input{./KapitelHandout1.tex}
+\input{./KapitelHandout2.tex}
+\input{./KapitelHandout3.tex}
+\input{./KapitelHandout4.tex}
+\input{./KapitelHandout5.tex}
+\newpage
+\begin{center}
+  \includegraphics[height=210px]{../Grafiken/Duality_Tetra-Tetra.png} \\
+ \includegraphics[height=210px]{../Grafiken/Duality_Hexa-Okta.png} \\
+ \includegraphics[height=210px]{../Grafiken/Duality_Iko-Dodek.png}
+\end{center}
+\end{document}
