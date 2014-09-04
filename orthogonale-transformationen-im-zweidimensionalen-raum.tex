@@ -1,0 +1,71 @@
+\section{Orthogonale Abbildungen im zweidimensionalen Raum}
+Sei $T$ aus $\OR{2}$, der Menge der orthogonalen Abbildungen, dann ist $T$ eindeutig über die Basisvektoren $e_1 = (1,0)$ und $e_2 = (0,1)$ definiert. Da $T$ aus $\OR{2}$ ist und somit längen- und orthogonalitätserhaltend ist, können wir ein $\theta$ zwischen $0$ und $2 \pi$ wählen, sodass gilt wenn $Te_1 = (\cos(\theta),\sin(\theta))$, dann ist $Te_2 = \pm (-\sin(\theta),\cos(\theta))$.
+Wir müssen nun die zwei Fälle für $Te_2$ unterscheiden. Zunächst wollen wir uns mit dem positiven Fall beschäftigen. 
+
+Wenn $Te_2 = + (-sin(\theta),(cos(\theta))$, dann können wir eine geordnete orthogonal Basis $W$ wählen, sodass für die Abbildungsmatrix von $T$ zur Basis $W$ gilt:
+$$A = _W(T)_W = \begin{pmatrix}
+	\cos(\theta) && -\sin(\theta) \\
+	\sin(\theta) && \cos(\theta)
+\end{pmatrix} $$
+und wir können erkennen, dass es sich um eine Rotation in der Ebene durch den Ursprung, mit Rotationswinkel $\theta$ handelt. Außerdem können wir erkennen, dass wegen der Additionstheoreme gilt $\det T = \cos^2(\theta) + \sin^2(\theta) = 1$.
+Jetzt möchten wir uns mit dem negativen Fall beschäftigen und gehen ähnlich wie im positiven Fall vor.
+
+Wenn $Te_2 = - (-\sin(\theta),(\cos(\theta))$, dann können wir eine geordnete orthogonal Basis $U$ wählen, sodass für die Abbildungsmatrix von $T$ zur Basis $U$ gilt:
+$$B = _U(T)_U = \begin{pmatrix}
+	\cos(\theta) && \sin(\theta) \\
+	\sin(\theta) && -\cos(\theta)
+\end{pmatrix}.$$
+In diesem Fall können wir erkennen, dass gilt $\det T = -\cos^2(\theta) -\sin^2(\theta) = -(\cos^2(\theta) +\sin^2(\theta)) = -1$. Außerdem kann eine weitere Eigenschaft der Abbildungsmatrix festgestellt werden, dass
+$$B^2 = \begin{pmatrix}
+	\cos^2(\theta) + \sin^2(\theta) && 0 \\
+	0 && \cos^2(\theta) + \sin^2(\theta)
+\end{pmatrix} = \begin{pmatrix}
+	1 && 0 \\
+	0 && 1 
+\end{pmatrix} = 1.
+$$ gilt. Wenn wir uns die Vektoren $x_1 = (\cos(\theta/2),\sin(\theta/2))$ und $x_2 = (-\sin(\theta/2),\cos(\theta/2))$ anschauen, dann können wir leicht sehen, dass diese Eigenvektoren von $B$ mit den Eigenwerten $1$ und $-1$ sind. Um das zu überprüfen verknüpfen wir $B$ mit $x_1$ und erhalten mit Hilfe der Additionstheoreme folgende Gleichungskette:
+\begin{align*}
+	Bx_1 &= \begin{pmatrix}
+		\cos(\theta) && \sin(\theta) \\
+		\sin(\theta) && -\cos(\theta)
+	\end{pmatrix} \begin{pmatrix}
+		\cos(\theta/2) \\
+		\sin(\theta/2)
+	\end{pmatrix} = \begin{pmatrix}
+		\cos(\theta)\cos(\theta/2)+\sin(\theta)\sin(\theta/2) \\
+		\sin(\theta)\cos(\theta/2)-\cos(\theta)\sin(\theta/2)
+	\end{pmatrix} \\ &= \begin{pmatrix}
+		\cos(\theta - \theta/2) \\
+		\sin(\theta - \theta/2)
+	\end{pmatrix} = \begin{pmatrix}
+		\cos(\theta/2) \\
+		\sin(\theta/2)
+	\end{pmatrix}.
+\end{align*}
+Demnach ist $x_1$ ein Eigenvektor zum Eigenwert $1$ von $B$. Genauso können wir überprüfen, ob $x_2$ ein Eigenvektor zum Eigenwert $-1$ von $B$ ist.
+\begin{align*}
+	Bx_2 &= \begin{pmatrix}
+		\cos(\theta) && \sin(\theta) \\
+		\sin(\theta) && -\cos(\theta)
+	\end{pmatrix} \begin{pmatrix}
+		-\sin(\theta/2) \\
+		\cos(\theta/2)
+	\end{pmatrix} = \begin{pmatrix}
+		-\cos(\theta)\sin(\theta/2)+\sin(\theta)\cos(\theta/2) \\
+		-\sin(\theta)\sin(\theta/2)-\cos(\theta)\cos(\theta/2)
+	\end{pmatrix} \\ &= \begin{pmatrix}
+		\sin(\theta - \theta/2) \\
+		-\cos(\theta - \theta/2)
+	\end{pmatrix} = \begin{pmatrix}
+		\sin(\theta/2) \\
+		-\cos(\theta/2)
+	\end{pmatrix}.
+\end{align*}
+Wenn wir nun die Abbildungsmatrix $C$ von $T$ bezüglich der Basis $\{x_1,x_2\}$ bestimmen, dann erhalten wir
+$$C = \begin{pmatrix}
+	1 && 0 \\
+	0 && -1
+\end{pmatrix}.$$
+Daraus können wir entnehmen, dass die orthogonale Abbildung $T$, wenn wir einen Vektor $x$ als Linearkombination von $x_1$ und $x_2$ wählen, $x$ auf sein Spiegelbild bezüglich der Gerade, die durch den Vektor $x_1$ ausgespannt wird, abgebildet wird. (Siehe Skizze 1). Solche orthogonalen Abbildungen nennen wir Spiegelungen an der Gerade $<x_1>$. Weiterhin können wir festhalten, dass für alle Vektoren $x$ aus der Ebene $\mathbb{R}^2$ gilt
+$$Tx = x - 2(x,x_2)x_2.$$
+Somit haben wir gezeigt, dass jede orthogonale Abbildung von $\mathbb{R}^2$ entweder eine Rotation oder eine Spiegelung ist.
