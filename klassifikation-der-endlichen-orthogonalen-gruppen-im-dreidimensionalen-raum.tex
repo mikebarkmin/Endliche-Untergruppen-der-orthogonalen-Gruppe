@@ -1,1 +1,12 @@
 \subsection{Klassifikation der endlichen orthogonalen Gruppen}
+Nachdem wir die endlichen Rotationsgruppen im dreidimensionalen Raum klassifiziert haben, möchten wir nun die endlichen Gruppen klassifizieren. Wir schauen uns zunächst die Gruppe $\mathcal{W}^*$ an. Diese soll alle orthogonalen Abbildungen umfassen, welche den Würfel wieder auf sich selber abbilden. Natürlich ist leicht zu sehen, dass $\mathcal{W}$ kleiner ist als $\mathcal{W}^*$. Aber wir können bemerken, dass für $T \in \mathcal{W}^*\backslash\mathcal{W}$ \ $-T = -1 \cdot T \in \mathcal{W}$ gilt. Daher gilt $\mathcal{W}^*=\mathcal{W}\cup(-1)\mathcal{W}$.
+Dieser Eigenschaft lässt sich auf alle Untergruppe von $\mathcal{O}(V)$ generalisieren, egal welche Dimension $V$ besitzt.
+
+\begin{lemma}
+    Wenn $\mathcal{G} \leq \mathcal{O}(V)$ und $\mathcal{H}$ Rotationsuntergruppen von $\mathcal{G}$ sind, dann gilt entweder $\mathcal{H}=\mathcal{G}$ oder $[\mathcal{G}:\mathcal{H}] = 2$. Also ist $\mathcal{H}$ ein Normalteiler von $\mathcal{G}$.
+\end{lemma}
+\begin{proof}
+    Sei $T \in \mathcal{G}\backslash\mathcal{H}$. Dann können wir uns ein beliebiges Element $S\in\mathcal{G}\backslash\mathcal{H}$ wählen und es gilt immer $\det(T^{-1}S) = (-1)^2=1$. Daher ist $T^{-1}$ ein Element von $\mathcal{H}$ und es gilt $\mathcal{G} = \mathcal{H} \cup T\mathcal{H}$ und $[\mathcal{G}:\mathcal{H}]=2$.
+\end{proof}
+Nachdem wir das Lemma bewiesen haben, können wir uns nun an den finalen Satz dieser Ausarbeitung machen. Wir möchten nun die endlichen Untergruppen der orthogonalen Abbildungen im dreidimensionalen Raum klassifizieren.
+
