@@ -1,5 +1,5 @@
 \subsection{Klassifikation der endlichen Rotationsgruppen}
-Für das folgende Kapitel nehmen wir an, dass $\dim V = 3$ und dass $W$ eine Ebene in $V$ ist. Wenn nun $R$ eine Rotation in $\mathcal{O}(W)$, dann kann $R$ zu einer Rotation in $\mathcal{O}(V)$ erweitert werden, indem wir $Rx=x$ für alle $x \in W^\perp$ setzten und eine Basis ${x_1,x_2,x_3}$ für $V$ wählen mit $x_1 \in W^\perp$, $x_2, x_3 \in W$. Dann wird $R$ durch die Matrix A repräsentiert.
+Für das folgende Kapitel nehmen wir an, dass $\dim V = 3$ und dass $W$ eine Ebene in $V$ ist. Wenn nun $R$ eine Rotation in $\mathcal{O}(W)$, dann kann $R$ zu einer Rotation in $\mathcal{O}(V)$ erweitert werden, indem wir $Rx=x$ für alle $x \in W^\perp$ setzten und eine Basis ${x_1,x_2,x_3}$ für $V$ wählen mit $x_1 \in W^\perp$, $x_2, x_3 \in W$. Dann wird $R$ durch die Matrix $A$ repräsentiert.
 $$A=\begin{pmatrix}
 1 & 0 & 0 \\
 0 & \cos{\theta} & -\sin{\theta} \\
@@ -58,45 +58,45 @@ Jetzt überprüfen wir, ob $S$ in der Ebene die selben Fixpunkte besitzt, dass h
 Somit haben wir gezeigt, dass die Fixpunkte der Rotation auch Fixpunkte der Spiegelung sind und damit die Rotationsachse mit der ursprünglichen Spiegelachse übereinstimmt.
 \end{proof}
 Wenn wir jede Abbildung in einer Diederuntergruppe $\mathcal{H}^n_2$ aus $\mathcal{O}(W)$ zu einer Rotation aus $\mathcal{O}(V)$ erweitern, dann ist die resultierende Menge von Rotationen eine Untergruppe von $\mathcal{O}(V)$, welche isomorph zu $\mathcal{H}^n_2$ ist. Diese Untergruppe nennen wir auch Diedergruppe und bezeichnen sie mit $\mathcal{H}^n_3$.
-Nun wollen wir uns mit den Rotationsgruppen der Platonischen Körper beschäftigen. Wenn wir ein reguläres Polyeder um den Ursprung im dreidimensionalen Raum zentrieren, dann bilden die Rotationen aus $\OR{3}$ die das Polyeder wieder in sich überführen eine endliche Untergruppe von $\OR{3}$. Wir können auf die Art und Weise nur drei voneinander unterscheidbare Untergruppen finden, denn die Rotationsgruppen des Würfels und des Oktaeders enthalten die selben Elemente. Genauso verhält es sich mit dem Dodekaeder und dem Ikosaeder. Diesen Zusammenhang können wir uns geometrisch überlegen. Wenn wir die Mittelpunkte benachbarter Seitenflächen des Würfels miteinander verbinden, dann erhalten wir ein in den Würfel einbeschriebenes Oktaeder. Das heißt, dass das Oktaeder unter den Elementen der Rotationsgruppe des Würfels invariant bleibt. Wir hätten auch nach dem selben Prinzip den Würfel in das Oktaeder einbeschreiben können. Bei dem Dodekaeder und dem Ikosaeder können wir ähnlich argumentieren. Schauen wir uns dem Zusammenhang in Abbildung \ref{fig:Duality_Dodek-Iso} an, wird er noch klarer. 
+Nun wollen wir uns mit den Rotationsgruppen der Platonischen Körper beschäftigen. Wenn wir ein reguläres Polyeder um den Ursprung im dreidimensionalen Raum zentrieren, dann bilden die Rotationen aus $\OR{3}$ die das Polyeder wieder in sich überführen eine endliche Untergruppe von $\OR{3}$. Wir können auf die Art und Weise nur drei voneinander unterscheidbare Untergruppen finden, denn die Rotationsgruppen des Würfels und des Oktaeders enthalten die selben Elemente. Genauso verhält es sich mit dem Dodekaeder und dem Ikosaeder. Diesen Zusammenhang können wir uns geometrisch überlegen. Wenn wir die Mittelpunkte benachbarter Seitenflächen des Würfels miteinander verbinden, dann erhalten wir ein in den Würfel einbeschriebenes Oktaeder. Das heißt, dass das Oktaeder unter den Elementen der Rotationsgruppe des Würfels invariant bleibt. Wir hätten auch nach dem selben Prinzip den Würfel in das Oktaeder einbeschreiben können. Bei dem Dodekaeder und dem Ikosaeder können wir ähnlich argumentieren. Schauen wir uns dem Zusammenhang in Abbildung \ref{fig:Dual_Platonische_Koerper} an, wird er noch klarer. 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.4\linewidth]{grafiken/dual_dodekaeder.pdf}
+\includegraphics[width=0.9\linewidth]{grafiken/dual_platonische_koerper.pdf}
 \caption{Dualität der Platonischen Körper}
-\label{fig:Duality_Dodek-Iso}
+\label{fig:Dual_Platonische_Koerper}
 \end{figure}
 
 Jetzt wollen wir uns genauer mit den Rotationsgruppen der Platonischen Körper befassen. Um die folgenden Gedankengänge leichter zu verstehen, kann die Webanwendung Visualisierung der platonischen Körper\footnote{\url{http://www-stud.uni-due.de/~simibark/visualisierung-platonische-koerper}} genutzt werden.
 
-Angenommen, dass ein Tetraeder am Ursprung des dreidimensionalen Raums ausgerichtet ist. Die Rotationsgruppe, die alle Abbildungen enthält die das Tetraeder wieder in sich überführen werden wir mit $\mathcal{T}$ bezeichnen. Nun müssen wir uns überlegen, welche Rotationen in dieser Untergruppe enthalten sind. Die Tetraedergruppe $\mathcal{T}$ enthält acht Rotationen um die Rotationsachsen zwischen einem Eckpunkt und dem Mittelpunkt der gegenüberliegenden Seite mit Rotationswinkeln $\frac{2}{3}\pi$ und $\frac{4}{3}\pi$, drei Rotationen um die Rotationsachsen zwischen den Mittelpunkten zweier gegenüberliegender Kanten mit Rotationswinkel $\pi$ und die Identität. Es gilt somit $| \mathcal{T} | = 4 \cdot 2 + 3 \cdot 1 + 1 = 12$.
+Wir nehmen an, dass das Tetraeder am Ursprung ausgerichtet ist und bezeichnen die Rotationsgruppe, die alle Abbildungen enthält, die das Tetraeder wieder in sich überführen mit $\mathcal{T}$. Nun müssen wir uns überlegen, welche Rotationen in dieser Untergruppe enthalten sind. Die Tetraedergruppe $\mathcal{T}$ enthält acht Rotationen um die Rotationsachsen zwischen einem Eckpunkt und dem Mittelpunkt der gegenüberliegenden Seite mit Rotationswinkeln $\frac{2}{3}\pi$ und $\frac{4}{3}\pi$, drei Rotationen um die Rotationsachsen zwischen den Mittelpunkten zweier gegenüberliegender Kanten mit Rotationswinkel $\pi$ und die Identität. Es gilt somit $| \mathcal{T} | = 4 \cdot 2 + 3 \cdot 1 + 1 = 12$.
 
-Die Rotationsgruppe des Würfels bezeichnen wir mit $\mathcal{W}$. Die Würfelgruppe $\mathcal{W}$ enthält drei verschiedene Arten von Rotationen und die Identität. Zum einen enthält sie neun Rotationen mit den Winkeln $\frac{1}{2}\pi$ ,$\pi$ und $\frac{3}{2}\pi$ um die Rotationsachsen zwischen den Mittelpunkten zweier gegenüberliegender Seiten, acht Rotationen mit den Winkeln $\frac{2}{3}\pi$ und $\frac{4}{3}\pi$ um die Rotationsachsen zwischen zwei diagonal gegenüberliegenden Eckpunkten und zuletzt sechs Rotationen mit den Winkel $\pi$ um die Rotationsachse zwischen den Mittelpunkten zweier diagonal gegenüberliegender Kanten. Es gilt somit $| \mathcal{W} | = 3 \cdot 3 + 4 \cdot 2 + 6 \cdot 1 + 1 = 24$.
+Die Rotationsgruppe des Würfels bezeichnen wir mit $\mathcal{W}$. Die Würfelgruppe $\mathcal{W}$ enthält drei verschiedene Arten von Rotationen und die Identität. Zum einen enthält sie neun Rotationen mit den Winkeln $\frac{1}{2}\pi$ ,$\pi$ und $\frac{3}{2}\pi$ um die Rotationsachsen zwischen den Mittelpunkten zweier gegenüberliegender Seiten, acht Rotationen mit dem Winkeln $\frac{2}{3}\pi$ und $\frac{4}{3}\pi$ um die Rotationsachsen zwischen zwei diagonal gegenüberliegenden Eckpunkten und zuletzt sechs Rotationen mit dem Winkel $\pi$ um die Rotationsachsen zwischen den Mittelpunkten zweier diagonal gegenüberliegender Kanten. Es gilt somit $| \mathcal{W} | = 3 \cdot 3 + 4 \cdot 2 + 6 \cdot 1 + 1 = 24$.
 
-Die Rotationsgruppe $\mathcal{I}$ des Ikosaeders enthält 24 Rotationen um die Rotationsachsen zwischen zwei gegenüberliegenden Eckpunkten mit Rotationswinkel $\frac{2}{5}\pi$, $\frac{4}{5}\pi$, $\frac{6}{5}\pi$, $\frac{8}{5}\pi$, 20 Rotationen um die Rotationsachsen zwischen den Mittelpunkten zweier gegenüberliegender Seiten mit Rotationswinkel $\frac{2}{3}\pi$, $\frac{4}{3}\pi$, 15 Drehungen um die Rotationsachse zwischen den Mittelpunkten zweier gegenüberliegender Kanten mit Rotationswinkel $\pi$ und der Identität. Es gilt somit $| \mathcal{I} | = 15 \cdot 1 + 10 \cdot 2 + 6 \cdot 4 + 1 = 60$.
+Die Rotationsgruppe $\mathcal{I}$ des Ikosaeders enthält 24 Rotationen um die Rotationsachsen zwischen zwei gegenüberliegenden Eckpunkten mit Rotationswinkel $\frac{2}{5}\pi$, $\frac{4}{5}\pi$, $\frac{6}{5}\pi$, $\frac{8}{5}\pi$, 20 Rotationen um die Rotationsachsen zwischen den Mittelpunkten zweier gegenüberliegender Seiten mit Rotationswinkel $\frac{2}{3}\pi$, $\frac{4}{3}\pi$, 15 Drehungen um die Rotationsachsen zwischen den Mittelpunkten zweier gegenüberliegender Kanten mit Rotationswinkel $\pi$ und der Identität. Es gilt somit $| \mathcal{I} | = 15 \cdot 1 + 10 \cdot 2 + 6 \cdot 4 + 1 = 60$.
 
 Wir haben nun die Rotationsgruppen der zyklischen Gruppe, Diedergruppe und aller regelmäßigen Polyeder bestimmt. Doch bevor wir mit der Klassifizierung der endlichen Rotationsgruppen beginnen können, müssen wir zunächst noch den Begriff des Pols einführen.
 
 \begin{defi}[Pole]
-	Wenn $T \in \mathcal{O}(V)$ eine Rotation ausgeschlossen der Identität $E$ ist, dann erhalten wir genau zwei Schnittpunkte der Rotationsachse mit der Einheitskugel um den Ursprung. Diese beiden Punkte nennen wir Pole. Die Menge aller Pole einer Untergruppe $\mathcal{G}$ von $\mathcal{O}(V)$ bezeichnen wir mit $\mathcal{P}$
+	Wenn $T \in \mathcal{O}(V)$ eine Rotation ausgeschlossen der Identität $E$ ist, dann erhalten wir genau zwei Schnittpunkte der Rotationsachse mit der Einheitskugel um den Ursprung. Diese beiden Punkte nennen wir Pole. Die Menge aller Pole einer Untergruppe $\mathcal{G}$ von $\mathcal{O}(V)$ bezeichnen wir mit $\mathcal{P}$.
 \end{defi} 
 
 Jetzt können wir die Menge der Pole zu den einzelnen Rotationsgruppen, die wir zuvor diskutiert haben, aufstellen und ihre Mächtigkeit ermitteln. Die zyklische Gruppe $\mathcal{C}^n_3$ enthält $n$ Rotationen, die alle dieselbe Rotationsachse besitzen. Daher besitzt die Polmenge $\mathcal{P}$ zu $\mathcal{C}^n_3$ genau zwei Elemente. Außerdem können wir festhalten, dass kein Pol durch eine Transformation aus $\mathcal{C}^n_3$ auf den anderen überführt wird, daher besitzt $\mathcal{P}$ zwei ein-elementige Bahnen. Wenn wir uns die Bahnformel zur Hilfe nehmen, können wir daraus die Ordnung der Stabilisatoren für die Pole ableiten. Diese kennen wir aus der linearen Algebra und lautet wie folgt:
 $$ |G| = |G \circ p| \cdot |G_p| $$
-Dabei ist $G \circ p = \{g \circ p | g \in G\}$, die Bahn von p und $G_p = \{g \in G | g \circ p = p \}$, der Stabilisator von p. 
+Dabei ist $G \circ p = \{g \circ p | g \in G\}$ die Bahn von p und $G_p = \{g \in G | g \circ p = p \}$ der Stabilisator von p. 
 
 Wenden wir diese nun auf unser Beispiel an, können wir aus der folgenden Gleichung die Ordnung des Stabilisators ableiten.
 \begin{align*}
 	 |\mathcal{C}_3^n| &= |\mathcal{C}_3^n \circ p| \cdot |{\mathcal{C}_3^n}_p| \Leftrightarrow\\
 	 n &= 1 \cdot |{\mathcal{C}_3^n}_p|
 \end{align*}
-Jetzt wissen wir, dass die Ordnung des Stabilisators für einen Pol $n$ ist. Als nächstes betrachten wir die Pole der Diedergruppe $\mathcal{H}_3^n$. Diese Gruppe enthält $n$ Rotationen mit verschiedenen Rotationsachsen und eine Rotation, die orthogonal zu den anderen Rotationen steht, demnach enthält die Menge der Pole $\mathcal{P}$ der Gruppe $\mathcal{H}_3^n$ $2n+2$ Pole. Diese Pole kommen auf drei verschiedene Arten zustande. Zum einen erhalten wir Pole von Rotationsachsen die durch die Eckpunkte des Polygon gehen, dann erhalten wir Pole von Rotationsachsen durch die Mittelpunkte der Kanten des Polygons und Pole von der Rotationsachse der Transformationen der zyklischen Gruppe. Zur Veranschaulichung können wir uns die Abbildung angucken.
+Jetzt wissen wir, dass die Ordnung des Stabilisators für einen Pol $n$ ist. Als nächstes betrachten wir die Pole der Diedergruppe $\mathcal{H}_3^n$. Diese Gruppe enthält $n$ Rotationen mit verschiedenen Rotationsachsen und eine Rotation, die orthogonal zu den anderen Rotationen steht, demnach enthält die Menge der Pole $\mathcal{P}$ der Gruppe $\mathcal{H}_3^n$ $2n+2$ Pole. Diese Pole kommen auf drei verschiedene Arten zustande. Zum einen erhalten wir Pole von Rotationsachsen die durch die Eckpunkte des Polygons gehen, dann erhalten wir Pole von Rotationsachsen durch die Mittelpunkte der Kanten des Polygons und Pole von der Rotationsachse der Transformationen der zyklischen Gruppe. Zur Veranschaulichung können wir uns die Abbildung angucken.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.5\linewidth]{grafiken/pole_diedergruppe}
 \caption{Pole der Diedergruppe $\mathcal{H}_3^4$}
 \label{fig:pole_diedergruppe}
 \end{figure}
-Führen wir dieses Verfahren auch für die platonischen Körper durch, dann erhalten wir eine folgende Werte:
+Führen wir dieses Verfahren auch für die platonischen Körper durch, dann erhalten wir folgende Werte:
 \begin{center}
 	\begin{tabular}{l|cccccc}
 		$\mathcal{G}$ & $|\mathcal{G}|$ & $|\mathcal{P}|$ & Anzahl Bahnen & \multicolumn{3}{c}{Ordnung der Stabilisatoren}\\
@@ -108,7 +108,7 @@ Führen wir dieses Verfahren auch für die platonischen Körper durch, dann erha
 		$\mathcal{I}$ & $60$ & $62$ & $3$ & \ \ \ \ \ $2$ & \ \ \ \ \ \ $3$ & $5$
 	\end{tabular}
 \end{center}
-Wir behaupten nun, dass wir alle endlichen Rotationsuntergruppen von $\OR{3}$ gefunden haben. Um unsere Behauptung zu festigen beweisen wir nun den folgenden Satz.
+Wir behaupten nun, dass wir alle endlichen Rotationsuntergruppen von $\OR{3}$ gefunden haben. Um unsere Behauptung zu festigen, beweisen wir nun den folgenden Satz.
 \begin{theorem}
 	Haben $\mathcal{C}^n_3,\mathcal{H}^n_3,\mathcal{T},\mathcal{W}$ und $\mathcal{I}$ die gleichen Eigenschaften wie in Bemerkung 5.5, dann ist $\mathcal{C}^n_3,n\geq1;\mathcal{H}^n_3,n\geq2;\mathcal{T};\mathcal{W};\mathcal{I}$ eine komplette Liste aller endlichen Untergruppen von Drehungen aus $\OR{3}$.
 \end{theorem}
@@ -124,12 +124,12 @@ Wir behaupten nun, dass wir alle endlichen Rotationsuntergruppen von $\OR{3}$ ge
 	\begin{align}
 	\sum_{p \in X}(r_p - 1)= 2(N-1)
 	\end{align}
-	Wenn zwei Pole $p$ und $p^{\#}$ in derselben Bahn liegen, dann folgt $\mathcal{G}_p=\mathcal{G}_{p^{\#}}$ und auch $N=r_p n_p=r_{p^{\#}} n_{p^{\#}}$. Wir können also Summanden von Polen, die in derselben Bahn liegen zusammenfassen. Wenn gilt $r_i=r_p$, falls $p\in B_i$, die Anzahl der verschiedenen Bahnen $m$ ist und $n_i:=|B_i|$, dann folgt aus $(1)$
+	Wenn zwei Pole $p$ und $p^{\#}$ in derselben Bahn liegen, dann folgt $\mathcal{G}_p=\mathcal{G}_{p^{\#}}$ und auch $N=r_p n_p=r_{p^{\#}} n_{p^{\#}}$. Wir können also Summanden von Polen, die in derselben Bahn liegen, zusammenfassen. Wenn gilt $r_i=r_p$, falls $p\in B_i$ die Anzahl der verschiedenen Bahnen $m$ ist, und $n_i:=|B_i|$, dann folgt aus $(1)$
 	\begin{align}
 	&\sum_{i=1}^m n_i(r_i-1)=2(N-1) \\
 	\Leftrightarrow &\underbrace{\sum_{i=1}^m \underbrace{(1-\frac{1}{r_i})}_{\substack{\geq \frac{1}{2}}}}_{\substack{\geq \frac{m}{2}}}=\underbrace{2-\frac{2}{N}}_{\substack{<2}}
 	\end{align}
-	Aus dieser Gleichung folgt, dass es höchstens 3 Bahnen geben kann, da $m \leq 3$. Wir möchten nun die drei Fälle überprüfen und schauen welche Drehgruppen wir dann vorliegen haben.
+	Aus dieser Gleichung folgt, dass es höchstens 3 Bahnen geben kann, da $m \leq 3$. Wir möchten nun die drei Fälle überprüfen und schauen, welche Drehgruppen wir vorliegen haben.
 	
 	\textbf{Fall 1:} Es gilt $m=1$. Also existiert genau eine Bahn und es folgt aus Gleichung (3):
 	\begin{align*}
@@ -142,13 +142,13 @@ Wir behaupten nun, dass wir alle endlichen Rotationsuntergruppen von $\OR{3}$ ge
 	2-\frac{2}{N} &= 1-\frac{1}{r_1} + 1-\frac{1}{r_2} \\
 	\frac{2}{N} &= \frac{1}{r_1} + \frac{1}{r_2}
 	\end{align*}
-	Da $N=r_i n_i$ gilt, muss $r_i \leq N$ gelten und somit folgt, dass $r_1 = r_2 = N$ und $n_1 = n_2 = 1$. Beide Bahnen haben die Länge 1 und daher gibt es nur zwei Pole $p$ und $p^{\#}$. Außerdem liegen sich beide Punkte auf der Einheitskugel gegenüber und sind Fixpunkte von G, das heißt die beiden Pole liegen auf einer Gerade durch den Ursprung. Daher kann die Gruppe G nur aus Drehungen um die Drehachse, die von $p$ und $p^{\#}$ gebildet wird, bestehen. Dies ist genau die Eigenschaft der Zyklischengruppe, daher gilt $\mathcal{G}=\mathcal{C}_3^n$.
+	Da $N=r_i n_i$ gilt, muss $r_i \leq N$ gelten und somit folgt, dass $r_1 = r_2 = N$ und $n_1 = n_2 = 1$. Beide Bahnen haben die Länge 1 und daher gibt es nur zwei Pole $p$ und $p^{\#}$. Außerdem liegen sich beide Punkte auf der Einheitskugel gegenüber und sind Fixpunkte von G, das heißt die beiden Pole liegen auf einer Gerade durch den Ursprung. Daher kann die Gruppe G nur aus Drehungen um die Drehachse, die von $p$ und $p^{\#}$ gebildet wird, bestehen. Dies ist genau die Eigenschaft der Zyklischen Gruppe, daher gilt $\mathcal{G}=\mathcal{C}_3^n$.
 	
 	\textbf{Fall 3:} Es gilt $m=3$. Aus (3) folgt dann:
 	\begin{align}
 	\frac{2}{N} = \frac{1}{r_1} + \frac{1}{r_2} + \frac{1}{r_3} - 1
 	\end{align}
-	Wir sortieren die Bahnen so, dass $r_1 \leq r_2 \leq r_3$ gilt. Daraus folgt, dass $r_1 = 2$ sein muss, da für $r_i \geq 3$ die rechte Seite sonst kleiner Null wäre und es somit zu einem Widerspruch kommen würde. Mit Hilfe der obrigen Gleichung können wir feststellen, dass es nur vier weitere mögliche Kombinationen gibt $\{(2,2,n),(2,3,3),(2,3,4),(2,3,5)\}$.
+	Wir sortieren die Bahnen so, dass $r_1 \leq r_2 \leq r_3$ gilt. Daraus folgt, dass $r_1 = 2$ sein muss, da für $r_i \geq 3$ die rechte Seite sonst kleiner Null wäre und es somit zu einem Widerspruch kommen würde. Mit Hilfe der obigen Gleichung können wir feststellen, dass es nur vier weitere mögliche Kombinationen gibt $\{(2,2,n),(2,3,3),(2,3,4),(2,3,5)\}$.
 	
 	
 	$(2,2,n)$: Aus Gleichung (4) folgt, dass $N = 2n$ und $n_3=2$. Daher besteht die Bahn $B_3$ aus zwei Elementen $p, p^{\#}$. Das heißt, dass jedes Element von $\mathcal{G}$ die Pole $p,p^{\#}$ festhält oder sie vertauscht. Daher müssen sich beide Pole gegenüberliegen und die Elemente aus $\mathcal{G}$ sind entweder Drehungen um die Drehachse $d$ durch die beiden Pole $p,p^{\#}$ oder Drehspiegelungen mit Drehachse $d$ um den Winkel $\pi$ und Spiegelebene $d^{\perp}$. Daher besitzt G genau die Eigenschaften der Diedergruppe und es gilt $\mathcal{G} = \mathcal{H}_3^n$. Die Eckpunkte und die Mittelpunkte der Seiten entsprechen dann den übrigen Polen. 
