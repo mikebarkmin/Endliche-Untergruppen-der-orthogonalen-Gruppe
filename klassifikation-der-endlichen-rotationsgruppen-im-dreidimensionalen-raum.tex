@@ -1,17 +1,17 @@
 \subsection{Klassifikation der endlichen Rotationsgruppen}
-Für das folgende Kapitel nehmen wir an, dass $\dim V = 3$ und dass $W$ eine Ebene in $V$ ist. Wenn nun $R$ eine Rotation in $\mathcal{O}(W)$, dann kann $R$ zu einer Rotation in $\mathcal{O}(V)$ erweitert werden, indem wir $Rx=x$ für alle $x \in W^\perp$ setzten und eine Basis ${x_1,x_2,x_3}$ für $V$ wählen mit $x_1 \in W^\perp$, $x_2, x_3 \in W$. Dann wird $R$ durch die Matrix $A$ repräsentiert.
+Für das folgende Kapitel nehmen wir an, dass $\dim V = 3$ und dass $W$ eine Ebene in $V$ ist. Wenn nun $R$ eine Rotation in $\mathcal{O}(W)$ ist, dann kann $R$ zu einer Rotation in $\mathcal{O}(V)$ erweitert werden, indem wir $Rx=x$ für alle $x \in W^\perp$ setzten und eine Basis ${x_1,x_2,x_3}$ für $V$ wählen mit $x_1 \in W^\perp$, $x_2, x_3 \in W$. Dann wird $R$ durch die Matrix $A$ repräsentiert.
 $$A=\begin{pmatrix}
 1 & 0 & 0 \\
-0 & \cos{\theta} & -\sin{\theta} \\
-0 & \sin{\theta} & \cos{\theta}
+    0 & \cos{(\theta)} & -\sin{(\theta)} \\
+    0 & \sin{(\theta)} & \cos{(\theta)}
 \end{pmatrix} $$ 
-Zunächst wollen wir uns überlegen, wie wir die zyklische Gruppe und die Diedergruppe ins Dreidimensionale überführen können. Als erstes erweitern wir jede Rotation der zyklischen Gruppe im Zweidimensionalen - wie oben beschrieben - in eine Rotation im dreidimensionalen Raum und erhalten so die zyklische Gruppe im dreidimensionalen Raum, die wir mit $\mathcal{C}_3^n$ bezeichnen. 
+Zunächst wollen wir uns überlegen, wie wir die zyklische Gruppe und die Diedergruppe ins Dreidimensionale überführen können. Als erstes erweitern wir jede Rotation der zyklischen Gruppe im Zweidimensionalen -- wie oben beschrieben -- in eine Rotation im dreidimensionalen Raum und erhalten so die zyklische Gruppe im dreidimensionalen Raum, die wir mit $\mathcal{C}_3^n$ bezeichnen. 
 
-Um auch die Diedergruppe ins dreidimensionale zu überführen, müssen wir uns nun damit befassen wie wir Spiegelungen im zweidimensionalen in den dreidimensionalen Raum überführen können. Wenn eine Spiegelung $S$ aus $\mathcal{W}$ ist, dann erweitern wir sie zu einer Rotation in $\mathcal{O}(V)$ und zwar zu einer Rotation $R$, um den Ursprung mit Winkel $\pi$. Die Spiegelgerade von $S$ wird die Rotationsachse von $R$. Diese Beziehung wollen wir zeigen:
+Um auch die Diedergruppe ins Dreidimensionale zu überführen, müssen wir uns nun damit befassen, wie wir Spiegelungen im zweidimensionalen in den dreidimensionalen Raum überführen können. Wenn eine Spiegelung $S$ aus $\mathcal{O}(W)$ ist, dann erweitern wir sie zu einer Rotation in $\mathcal{O}(V)$ und zwar zu einer Rotation $R$, um den Ursprung mit Winkel $\pi$. Die Spiegelgerade von $S$ wird die Rotationsachse von $R$. Diese Beziehung wollen wir zeigen:
 \begin{proof}
-	Angenommen, dass $\dim V = 3$ und dass $W$ eine Ebene in $V$ ist. Sei $R \in V$ eine Rotation um den Winkel $\pi$. Alle Punkte die auf der Rotationsachse liegen sind Fixpunkte von $R$. Damit die Rotationsachse, die ehemalige Spiegelachse der Spiegelung $S$ sein kann, müssen die Fixpunkte der beiden Achsen übereinstimmen. Zunächst bestimmen wir die Fixpunkte von $R$:
+    Angenommen, dass $\dim V = 3$ und dass $W$ eine Ebene in $V$ ist. Sei $R \in \mathcal{O}(V)$ eine Rotation um den Winkel $\pi$. Alle Punkte die auf der Rotationsachse liegen, sind Fixpunkte von $R$. Damit die Rotationsachse die ehemalige Spiegelachse der Spiegelung $S$ sein kann, müssen die Fixpunkte der beiden Achsen übereinstimmen. Zunächst bestimmen wir die Fixpunkte von $R$:
 	\begin{align*}
-	Eig_R(1) &= \ker{(R-E)} \\
+        \text{Eig}_R(1) &= \ker{(R-E)} \\
 	&= \ker{\begin{pmatrix}
 		-2 & 0 & 0 \\
 		0 & \cos{\theta} - 1 & \sin{\theta} \\
