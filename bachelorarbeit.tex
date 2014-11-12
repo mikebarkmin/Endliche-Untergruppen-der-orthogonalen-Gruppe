@@ -11,7 +11,7 @@
 %========
 %deutsche Anführungszeichen mit 
 \usepackage[babel,german=quotes]{csquotes}
-\usepackage[style=authoryear-comp,natbib=true,backend=biber]{biblatex}
+\usepackage[style=numeric,natbib=true,backend=biber]{biblatex}
 \bibliography{literatur.bib}
 
 %Verlinkungen
@@ -57,4 +57,7 @@ citecolor = black] {hyperref}
 \newpage
 \nocite{Grove1985}
 \printbibliography[title=Literaturverzeichnis]
+\newpage
+\input{./erklaerung}
+\addcontentsline{toc}{section}{Eigenständigkeitserklärung}
 \end{document}

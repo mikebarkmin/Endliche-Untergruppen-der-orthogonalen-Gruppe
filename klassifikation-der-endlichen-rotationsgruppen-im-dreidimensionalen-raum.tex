@@ -37,7 +37,7 @@ Um auch die Diedergruppe ins Dreidimensionale zu überführen, müssen wir uns n
 	\sin{\theta}
 	\end{pmatrix}\right\}
 	\end{align*}
-Jetzt überprüfen wir, ob $S$ in der Ebene die selben Fixpunkte besitzt, dass heißt wir überprüfen ob $Sx=x$ für alle $x$ aus der Fixpunktmenge von $R$ gilt. Sei $x = r(1+\cos{\theta},\sin{\theta})^T$ mit $r \in \mathbb{R}$.
+Jetzt überprüfen wir, ob $S$ in der Ebene dieselben Fixpunkte besitzt, das heißt wir überprüfen, ob $Sx=x$ für alle $x$ aus der Fixpunktmenge von $R$ gilt. Sei $x = r(1+\cos{\theta},\sin{\theta})^T$ mit $r \in \mathbb{R}$.
 	\begin{align*}
 		Sx &= \begin{pmatrix}
 			\cos{\theta} & \sin{\theta} \\
@@ -47,7 +47,7 @@ Jetzt überprüfen wir, ob $S$ in der Ebene die selben Fixpunkte besitzt, dass h
 		r\sin{\theta}
 		\end{pmatrix} \\
 		&=	\begin{pmatrix}
-		r(1 + \cos{\theta})(\cos{\theta})+rsin^2{\theta} \\
+		r(1 + \cos{\theta})(\cos{\theta})+r\sin^2{\theta} \\
 		r(1 + \cos{\theta})\sin{\theta}+(- \cos{\theta})r\sin{\theta}
 		\end{pmatrix} \\
 		&=	\begin{pmatrix}
@@ -66,9 +66,9 @@ Nun wollen wir uns mit den Rotationsgruppen der Platonischen Körper beschäftig
 \label{fig:Dual_Platonische_Koerper}
 \end{figure}
 
-Jetzt wollen wir uns genauer mit den Rotationsgruppen der Platonischen Körper befassen. Um die folgenden Gedankengänge leichter zu verstehen, kann die Webanwendung Visualisierung der platonischen Körper\footnote{\url{http://www-stud.uni-due.de/~simibark/visualisierung-platonische-koerper}} genutzt werden.
+Jetzt wollen wir uns genauer mit den Rotationsgruppen der Platonischen Körper befassen. Um die folgenden Gedankengänge leichter zu verstehen, kann die Webanwendung \textit{Visualisierung der platonischen Körper}\footnote{\url{http://www-stud.uni-due.de/~simibark/visualisierung-platonische-koerper}} genutzt werden.
 
-Wir nehmen an, dass das Tetraeder am Ursprung ausgerichtet ist und bezeichnen die Rotationsgruppe, die alle Abbildungen enthält, die das Tetraeder wieder in sich überführen mit $\mathcal{T}$. Nun müssen wir uns überlegen, welche Rotationen in dieser Untergruppe enthalten sind. Die Tetraedergruppe $\mathcal{T}$ enthält acht Rotationen um die Rotationsachsen zwischen einem Eckpunkt und dem Mittelpunkt der gegenüberliegenden Seite mit Rotationswinkeln $\frac{2}{3}\pi$ und $\frac{4}{3}\pi$, drei Rotationen um die Rotationsachsen zwischen den Mittelpunkten zweier gegenüberliegender Kanten mit Rotationswinkel $\pi$ und die Identität. Es gilt somit $| \mathcal{T} | = 4 \cdot 2 + 3 \cdot 1 + 1 = 12$.
+Wir nehmen an, dass das Tetraeder am Ursprung ausgerichtet ist, und bezeichnen die Rotationsgruppe, die alle Abbildungen enthält, die das Tetraeder wieder in sich überführen, mit $\mathcal{T}$. Nun müssen wir uns überlegen, welche Rotationen in dieser Untergruppe enthalten sind. Die Tetraedergruppe $\mathcal{T}$ enthält acht Rotationen um die Rotationsachsen zwischen einem Eckpunkt und dem Mittelpunkt der gegenüberliegenden Seite mit Rotationswinkeln $\frac{2}{3}\pi$ und $\frac{4}{3}\pi$, drei Rotationen um die Rotationsachsen zwischen den Mittelpunkten zweier gegenüberliegender Kanten mit Rotationswinkel $\pi$ und die Identität. Es gilt somit $| \mathcal{T} | = 4 \cdot 2 + 3 \cdot 1 + 1 = 12$.
 
 Die Rotationsgruppe des Würfels bezeichnen wir mit $\mathcal{W}$. Die Würfelgruppe $\mathcal{W}$ enthält drei verschiedene Arten von Rotationen und die Identität. Zum einen enthält sie neun Rotationen mit den Winkeln $\frac{1}{2}\pi$ ,$\pi$ und $\frac{3}{2}\pi$ um die Rotationsachsen zwischen den Mittelpunkten zweier gegenüberliegender Seiten, acht Rotationen mit dem Winkeln $\frac{2}{3}\pi$ und $\frac{4}{3}\pi$ um die Rotationsachsen zwischen zwei diagonal gegenüberliegenden Eckpunkten und zuletzt sechs Rotationen mit dem Winkel $\pi$ um die Rotationsachsen zwischen den Mittelpunkten zweier diagonal gegenüberliegender Kanten. Es gilt somit $| \mathcal{W} | = 3 \cdot 3 + 4 \cdot 2 + 6 \cdot 1 + 1 = 24$.
 
@@ -78,11 +78,11 @@ Wir haben nun die Rotationsgruppen der zyklischen Gruppe, Diedergruppe und aller
 
 \begin{defi}[Pole]
 	Wenn $T \in \mathcal{O}(V)$ eine Rotation ausgeschlossen der Identität $E$ ist, dann erhalten wir genau zwei Schnittpunkte der Rotationsachse mit der Einheitskugel um den Ursprung. Diese beiden Punkte nennen wir Pole. Die Menge aller Pole einer Untergruppe $\mathcal{G}$ von $\mathcal{O}(V)$ bezeichnen wir mit $\mathcal{P}$.
-\end{defi} 
+\end{defi}
 
 Jetzt können wir die Menge der Pole zu den einzelnen Rotationsgruppen, die wir zuvor diskutiert haben, aufstellen und ihre Mächtigkeit ermitteln. Die zyklische Gruppe $\mathcal{C}^n_3$ enthält $n$ Rotationen, die alle dieselbe Rotationsachse besitzen. Daher besitzt die Polmenge $\mathcal{P}$ zu $\mathcal{C}^n_3$ genau zwei Elemente. Außerdem können wir festhalten, dass kein Pol durch eine Transformation aus $\mathcal{C}^n_3$ auf den anderen überführt wird, daher besitzt $\mathcal{P}$ zwei ein-elementige Bahnen. Wenn wir uns die Bahnformel zur Hilfe nehmen, können wir daraus die Ordnung der Stabilisatoren für die Pole ableiten. Diese kennen wir aus der linearen Algebra und lautet wie folgt:
 $$ |G| = |G \circ p| \cdot |G_p| $$
-Dabei ist $G \circ p = \{g \circ p | g \in G\}$ die Bahn von p und $G_p = \{g \in G | g \circ p = p \}$ der Stabilisator von p. 
+Dabei ist $G \circ p = \{g \circ p | g \in G\}$ die Bahn von $p$ und $G_p = \{g \in G | g \circ p = p \}$ der Stabilisator von $p$.
 
 Wenden wir diese nun auf unser Beispiel an, können wir aus der folgenden Gleichung die Ordnung des Stabilisators ableiten.
 \begin{align*}
@@ -113,9 +113,9 @@ Wir behaupten nun, dass wir alle endlichen Rotationsuntergruppen von $\OR{3}$ ge
 	Haben $\mathcal{C}^n_3,\mathcal{H}^n_3,\mathcal{T},\mathcal{W}$ und $\mathcal{I}$ die gleichen Eigenschaften wie in Bemerkung 5.5, dann ist $\mathcal{C}^n_3,n\geq1;\mathcal{H}^n_3,n\geq2;\mathcal{T};\mathcal{W};\mathcal{I}$ eine komplette Liste aller endlichen Untergruppen von Drehungen aus $\OR{3}$.
 \end{theorem}
 \begin{proof}
-	Sei $\mathcal{G}$ eine endliche Untergruppe bestehend aus Drehungen von $\OR{3}$ und $p \in \mathcal{P}$ ein Pol von $R \in \mathcal{G}$ beliebig, dann sei $Stab(p) := \{R\in \mathcal{G} | R(p)=p\}$ der Stabilisator eines Pols p von G und $R_p := \{R(p) | R \in G \}$ die zugehörige Bahn.
-	
-	Zunächst führen wir folgende Bezeichnungen eine
+	Sei $\mathcal{G}$ eine endliche Untergruppe bestehend aus Drehungen von $\OR{3}$ und $p \in \mathcal{P}$ ein Pol von $R \in \mathcal{G}$ beliebig, dann sei $Stab(p) := \{R\in \mathcal{G} | R(p)=p\}$ der Stabilisator eines Pols $p$ von $G$ und $R_p := \{R(p) | R \in G \}$ die zugehörige Bahn.
+
+	Zunächst führen wir folgende Bezeichnungen ein
 	\begin{center}
 		$N:=|\mathcal{G}|$, $n_p:=|\mathcal{G}_p|=$ "`Bahnlänge"', $r_p:=|Stab(p)|$,
 	\end{center}
@@ -130,19 +130,19 @@ Wir behaupten nun, dass wir alle endlichen Rotationsuntergruppen von $\OR{3}$ ge
 	\Leftrightarrow &\underbrace{\sum_{i=1}^m \underbrace{(1-\frac{1}{r_i})}_{\substack{\geq \frac{1}{2}}}}_{\substack{\geq \frac{m}{2}}}=\underbrace{2-\frac{2}{N}}_{\substack{<2}}
 	\end{align}
 	Aus dieser Gleichung folgt, dass es höchstens 3 Bahnen geben kann, da $m \leq 3$. Wir möchten nun die drei Fälle überprüfen und schauen, welche Drehgruppen wir vorliegen haben.
-	
+
 	\textbf{Fall 1:} Es gilt $m=1$. Also existiert genau eine Bahn und es folgt aus Gleichung (3):
 	\begin{align*}
 	\underbrace{2-\frac{2}{N}}_{\substack{\geq 1}} = \underbrace{1-\frac{1}{r_1}}_{\substack{<1}}
 	\end{align*}
 	Dies ist aber ein Widerspruch, sodass es nicht nur eine Bahn geben kann.
-	
+
 	\textbf{Fall 2:} Es gilt $m=2$. Also existieren genau zwei Bahnen und aus (3) folgt:
 	\begin{align*}
 	2-\frac{2}{N} &= 1-\frac{1}{r_1} + 1-\frac{1}{r_2} \\
 	\frac{2}{N} &= \frac{1}{r_1} + \frac{1}{r_2}
 	\end{align*}
-	Da $N=r_i n_i$ gilt, muss $r_i \leq N$ gelten und somit folgt, dass $r_1 = r_2 = N$ und $n_1 = n_2 = 1$. Beide Bahnen haben die Länge 1 und daher gibt es nur zwei Pole $p$ und $p^{\#}$. Außerdem liegen sich beide Punkte auf der Einheitskugel gegenüber und sind Fixpunkte von G, das heißt die beiden Pole liegen auf einer Gerade durch den Ursprung. Daher kann die Gruppe G nur aus Drehungen um die Drehachse, die von $p$ und $p^{\#}$ gebildet wird, bestehen. Dies ist genau die Eigenschaft der Zyklischen Gruppe, daher gilt $\mathcal{G}=\mathcal{C}_3^n$.
+	Da $N=r_i n_i$ gilt, muss $r_i \leq N$ gelten und somit folgt, dass $r_1 = r_2 = N$ und $n_1 = n_2 = 1$. Beide Bahnen haben die Länge $1$ und daher gibt es nur zwei Pole $p$ und $p^{\#}$. Außerdem liegen sich beide Punkte auf der Einheitskugel gegenüber und sind Fixpunkte von $G$, das heißt die beiden Pole liegen auf einer Gerade durch den Ursprung. Daher kann die Gruppe $G$ nur aus Drehungen um die Drehachse, die von $p$ und $p^{\#}$ gebildet wird, bestehen. Dies ist genau die Eigenschaft der Zyklischen Gruppe, daher gilt $\mathcal{G}=\mathcal{C}_3^n$.
 	
 	\textbf{Fall 3:} Es gilt $m=3$. Aus (3) folgt dann:
 	\begin{align}
@@ -156,19 +156,19 @@ Wir behaupten nun, dass wir alle endlichen Rotationsuntergruppen von $\OR{3}$ ge
 	
 	$(2,3,3)$: Aus Gleichung (4) folgt, dass $N = 12$ und $n_1 = 6, n_2 = 4, n_3 = 4$ gilt. Die Pole der Bahn $B_2$ sind die Eckpunkte eines Tetraeders $T$ und $\mathcal{G}$ ist die Drehgruppe $\mathcal{T}$. Außerdem gilt, dass
 	\begin{align*}
-	n_1 = \# Kanten(T),n_2 = \# Eckpunkte(T),n_3 = \# \text{Flächen}(T)
+        n_1 = \# \text{Kanten}(T),n_2 = \# \text{Eckpunkte}(T),n_3 = \# \text{Flächen}(T)
 	\end{align*}
 	
 	
 	$(2,3,4)$: Aus Gleichung (4) folgt, dass $N = 24$ und $n_1 = 12, n_2 = 8, n_3 = 6$ gilt. Die Pole der Bahn $B_2$ sind die Eckpunkte eines Würfels $W$ und $\mathcal{G}$ ist die Drehgruppe $\mathcal{W}$. Außerdem gilt, dass
 	\begin{align*}
-	n_1 = \# Kanten(W),n_2 = \# Eckpunkte(W),n_3 = \# \text{Flächen}(W)
+        n_1 = \# \text{Kanten}(W),n_2 = \# \text{Eckpunkte}(W),n_3 = \# \text{Flächen}(W)
 	\end{align*}
 	
 	
 	$(2,3,5)$: Aus Gleichung (4) folgt, dass $N = 60$ und $n_1 = 30, n_2 = 20, n_3= 12$ gilt. Die Pole der Bahn $B_3$ sind die Eckpunkte eines Ikosaeders $I$ und $\mathcal{G}$ ist die Drehgruppe $\mathcal{I}$. Außerdem gilt, das
 	\begin{align*}
-	n_1 = \# Kanten(I),n_2 = \# \text{Flächen}(I),n_3 = \# \text{Eckpunkte}(T)
+        n_1 = \# \text{Kanten}(I),n_2 = \# \text{Flächen}(I),n_3 = \# \text{Eckpunkte}(T)
 	\end{align*}
-Somit haben wir alle endlichen Rotationsuntergruppen der orthogonalen Gruppe im zweidimensionalen Raum klassifiziert.
+Somit haben wir alle endlichen Rotationsuntergruppen der orthogonalen Gruppe im dreidimensionalen Raum klassifiziert.
 \end{proof}
