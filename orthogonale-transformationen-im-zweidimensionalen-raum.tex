@@ -1,13 +1,13 @@
 \section{Orthogonale Abbildungen im zweidimensionalen Raum}
 Sei $T$ aus $\OR{2}$, der Menge der orthogonalen Abbildungen, dann ist $T$ eindeutig durch die Bilder der Basisvektoren $e_1 = (1,0)$ und $e_2 = (0,1)$ bestimmt. Da $T$ aus $\OR{2}$ ist und somit längen- und orthogonalitätserhaltend ist, können wir einen Winkel $\theta$ zwischen $0$ und $2 \pi$ wählen, sodass gilt: Wenn $Te_1 = (\cos(\theta),\sin(\theta))$, dann ist $Te_2 = \pm (-\sin(\theta),\cos(\theta))$.
-Wir müssen nun die zwei Fälle für $Te_2$ unterscheiden. Zunächst wollen wir uns mit dem positiven Fall beschäftigen. 
+Wir müssen nun die zwei Fälle für $Te_2$ unterscheiden. Zunächst wollen wir uns mit dem positiven Fall beschäftigen.
 
 Wenn $Te_2 = + (-\sin(\theta),\cos(\theta))$, dann können wir eine geordnete orthogonale Basis $W$ wählen, sodass für die Abbildungsmatrix von $T$ zur Basis $W$ gilt:
 $$A =\;_W\!(T)_W = \begin{pmatrix}
 	\cos(\theta) && -\sin(\theta) \\
 	\sin(\theta) && \cos(\theta)
-\end{pmatrix} $$
-Wir können erkennen, dass es sich um eine Rotation in der Ebene um den Ursprung mit Rotationswinkel $\theta$ handelt. Außerdem können wir erkennen, dass wegen dem Satz des Pythagoras gilt: $\det T = \cos^2(\theta) + \sin^2(\theta) = 1$.
+\end{pmatrix}. $$
+Wir können erkennen, dass es sich um eine Rotation in der Ebene um den Ursprung mit Drehwinkel $\theta$ handelt. Außerdem können wir erkennen, dass wegen des Satzes des Pythagoras gilt: $\det T = \cos^2(\theta) + \sin^2(\theta) = 1$.
 Jetzt möchten wir uns mit dem negativen Fall beschäftigen und gehen ähnlich wie im positiven Fall vor.
 
 Wenn $Te_2 = - (-\sin(\theta),\cos(\theta))$, dann können wir eine geordnete orthogonale Basis $U$ wählen, sodass für die Abbildungsmatrix von $T$ zur Basis $U$ gilt:
@@ -21,9 +21,10 @@ $$B^2 = \begin{pmatrix}
 	0 && \cos^2(\theta) + \sin^2(\theta)
 \end{pmatrix} = \begin{pmatrix}
 	1 && 0 \\
-	0 && 1 
+	0 && 1
 \end{pmatrix} = 1.
 $$Wenn wir uns die Vektoren $x_1 = (\cos(\theta/2),\sin(\theta/2))$ und $x_2 = (-\sin(\theta/2),\cos(\theta/2))$ anschauen, dann können wir leicht sehen, dass diese Eigenvektoren von $B$ mit den Eigenwerten $1$ und $-1$ sind. Um das zu überprüfen, verknüpfen wir $B$ mit $x_1$ und erhalten mit Hilfe der Additionstheoreme folgende Gleichungskette:
+
 \begin{align*}
 	Bx_1 &= \begin{pmatrix}
 		\cos(\theta) && \sin(\theta) \\

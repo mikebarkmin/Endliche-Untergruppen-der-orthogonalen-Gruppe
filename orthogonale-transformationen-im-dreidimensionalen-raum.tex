@@ -1,9 +1,8 @@
 \section{Orthogonale Abbildungen im dreidimensionalen Raum}
-In den folgenden Abschnitten gehen wir von $V= \mathbb{R}^3$ aus.\\
-Wir betrachten nacheinander Drehungen, Spiegelungen und Drehspiegelungen und charakterisieren diese, indem wir ihre Eigenschaften nennen und durch Beweis begründen. 
+Wir betrachten nacheinander Drehungen, Spiegelungen und Drehspiegelungen und charakterisieren diese, indem wir ihre Eigenschaften nennen und durch Beweis begründen.
 \begin{theorem}
-Sei $T$ eine Drehung aus der orthogonalen Gruppe $\OR{3}$, dann hat $T$ eine fixierte Drehachse, die durch den Eigenvektor $x$ von $T$ zum Eigenwert 1 eindeutig festgelegt ist. 
-Wenn wir $T$ auf die durch $x^{\perp}$ eindeutig festgelegte Ebene $\mathcal{P}$ einschränken, ist $T$ eine Drehung im zweidimensionalen Raum $\mathbb{R}^2$. 
+Sei $T$ eine Drehung aus der orthogonalen Gruppe $\OR{3}$, dann hat $T$ eine fixierte Drehachse, die durch den Eigenvektor $x$ von $T$ zum Eigenwert 1 eindeutig festgelegt ist.
+Wenn wir $T$ auf die durch $x^{\perp}$ eindeutig festgelegte Ebene $\mathcal{P}$ einschränken, ist $T$ eine Drehung im zweidimensionalen Raum $\mathbb{R}^2$.
 \end{theorem}
 \begin{proof}
 Zunächst wollen wir klären, wie der Eigenwert 1 zustande kommt:
@@ -13,19 +12,19 @@ Zunächst wollen wir klären, wie der Eigenwert 1 zustande kommt:
   \lambda_1=1, \lambda_2=\overline{\lambda_3}\notin \mathbb{R}
  \end{align}
 Für uns ist nur der Eigenwert $1$ interessant, dieser ist aber in beiden Fällen vorhanden.\\
-Es bleibt zu nachzuweisen, weshalb $\mathcal{T}|_\mathcal{P}$ eine Drehung in der Ebene $\mathcal{P}$ ist.
+Es bleibt nachzuweisen, weshalb $\mathcal{T}|_\mathcal{P}$ eine Drehung in der Ebene $\mathcal{P}$ ist.
 Sei $x$ ein Eigenvektor zum Eigenwert $1$, dann gilt nach der Definition eines Eigenvektors: $x=T^{-1}Tx=T^{-1}x$. Daraus können wir folgende Gleichungskette ableiten: $0=(x^{\perp},x)=(x^{\perp},T^{-1}x)=(Tx^{\perp},x)$ und direkt ablesen, dass $\mathcal{P}=x^{\perp}$ invariant ist unter $T$. Betrachten wir nun die Determinate der Einschränkung $T|_\mathcal{P}$, dann gilt $\det(T|_\mathcal{P})=1$, wegen $\det(T|_\mathcal{P}) = \lambda_2\lambda_3$ und $\lambda_2,\lambda_3$ wie oben.
 \end{proof}
 Die Eigenschaften der Spiegelungen in $\OR{3}$ fassen wir in einer Bemerkung zusammen:
 \begin{bem}
-Eine Spiegelung $S$ an der Ebene $\mathcal{P}$ ist eine Abbildung, für die gilt, dass $Sx=x$ für alle $x \in \mathcal{P}$. Die $y$ aus dem orthogonalen Komplement $P^{\perp}$ der Ebene $\mathcal{P}$ werden auf ihr Negatives abgebildet, kurz $Sy=-y$ für alle $y\in \mathcal{P}$.\\
-Für alle Vektoren $z \in \mathbb{R}^3$ gibt es einen Einheitsvektor $r$ aus $P^{\perp}$, sodass die Abbildungsvorschrift $Sz = z -2(z,r)r$ gilt.\\
+    Eine Spiegelung $S$ an der Ebene $\mathcal{P}$ ist eine Abbildung, für die gilt, dass $Sx=x$ für alle $x \in \mathcal{P}$. Die $y$ aus dem orthogonalen Komplement $\mathcal{P}^{\perp}$ der Ebene $\mathcal{P}$ werden auf ihr Negatives abgebildet, kurz $Sy=-y$ für alle $y\in \mathcal{P}$.\\
+    Für alle Vektoren $z \in \mathbb{R}^3$ gibt es einen Einheitsvektor $r$ aus $\mathcal{P}^{\perp}$, sodass die Abbildungsvorschrift $Sz = z -2(z,r)r$ gilt.\\
 Nach Wahl einer geeigneten Basis $\{r, x_2, x_3\}$, wobei $\{x_2, x_3\}$ Basis der Spiegelebene $\mathcal{P}$ ist, kann die Spiegelung $S$ durch die Matrix $A$ dargestellt werden.
 \begin{center}
   $A= \begin{pmatrix}
         -1 && 0 && 0 \\
         0 && 1 && 0 \\
-        0 && 0 && 1 
+        0 && 0 && 1
        \end{pmatrix}$
  \end{center}
  \end{bem}
@@ -48,7 +47,7 @@ Nach Wahl einer geeigneten Basis $\{r, x_2, x_3\}$, wobei $\{x_2, x_3\}$ Basis d
    $A= \begin{pmatrix}
          -1 && 0 && 0 \\
          0 && \cos(\theta) && -\sin(\theta) \\
-         0 && \sin(\theta) && \cos(\theta) 
+         0 && \sin(\theta) && \cos(\theta)
         \end{pmatrix}$.
   \end{center}
  Die Darstellung als Produkt von einer Drehung und einer Spiegelung verdeutlicht den dargelegten Zusammenhang:
@@ -57,12 +56,12 @@ Nach Wahl einer geeigneten Basis $\{r, x_2, x_3\}$, wobei $\{x_2, x_3\}$ Basis d
             1 && 0 && 0 \\
             0 && \cos(\theta) && -\sin(\theta) \\
             0 && \sin(\theta) && \cos(\theta)
-           \end{pmatrix} 
+           \end{pmatrix}
            \begin{pmatrix}
             -1 && 0 && 0 \\
             0 && 1 && 0 \\
             0 && 0 && 1
-           \end{pmatrix}$.  
+           \end{pmatrix}$.
  \end{center}
 
 
