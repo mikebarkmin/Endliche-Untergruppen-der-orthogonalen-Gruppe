@@ -43,10 +43,12 @@ citecolor = black] {hyperref}
 \DeclareMathOperator{\Span}{span}
 
 \begin{document}
+\renewcommand{\thepage}{\Roman{page}}
 \input{./titelseite}
 \setcounter{tocdepth}{2}
 \tableofcontents
 \newpage
+\pagenumbering{arabic}
 \input{./einleitung}
 \input{./orthogonale-transformationen-im-zweidimensionalen-raum}
 \input{./klassifikation-der-endlichen-orthogonalen-gruppen-im-zweidimensionalen-raum}
@@ -56,7 +58,12 @@ citecolor = black] {hyperref}
 \input{./klassifikation-der-endlichen-orthogonalen-gruppen-im-dreidimensionalen-raum}
 \newpage
 \nocite{Grove1985}
+\setcounter{page}{3}
+\renewcommand{\thepage}{\Roman{page}}
 \printbibliography[title=Literaturverzeichnis]
+\newpage
+\input{./anwendung}
+\addcontentsline{toc}{section}{Anhang}
 \newpage
 \input{./erklaerung}
 \addcontentsline{toc}{section}{Eigenständigkeitserklärung}
